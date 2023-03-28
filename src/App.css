@@ -1,0 +1,42 @@
+body {
+  background-color: #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.slider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+
+.slide {
+  text-align: center;
+  box-sizing: border-box;
+  height: 40vh;
+  background-color: yellow;
+  border: 1px solid #000;
+  cursor: pointer;
+  display: flex !important;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+  min-height: 300px;
+  transition: .5s all;
+	transform: scale(.5);
+}
+
+.slick-now .slide {
+  background-color: rgb(70, 174, 125);
+	transform: scale(1);
+}
